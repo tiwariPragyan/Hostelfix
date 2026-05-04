@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <div class="logo-icon"></div>
+    <span>Hostel Fix<span class="logo-accent">Fix</span></span>
+  </div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="complaint.html">New Complaint</a>
+    <a href="student.html">My Complaints</a>
+    <a href="admin.html">Admin Login</a>
+  </div>
+</div>
+
+<h2>All Complaints</h2>
+
+<div id="adminList"></div>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

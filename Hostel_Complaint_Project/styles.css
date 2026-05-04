@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #222;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto 40px;
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #1e88e5;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* complaint cards */
+
+.complaint-box {
+  background: #fff;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.complaint-box b {
+  color: #1e88e5;
+}
+
+/* admin buttons inline */
+
+.admin-buttons {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.admin-buttons button {
+  width: auto;
+  flex: 1;
+}
+
+/* simple nav */
+
+.navbar {
+  background: #1e88e5;
+  padding: 10px 18px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 12px;
+  font-size: 0.9rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* landing page */
+/* ---------- LOGO ---------- */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.logo-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1e88e5, #42a5f5);
+  position: relative;
+}
+
+.logo-icon::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 4px;
+  height: 5px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.logo-icon::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 6px;
+  border-radius: 50%;
+  height: 6px;
+  background: #fff;
+}
+
+.logo-accent {
+  color: #1e88e5;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  padding: 60px 16px 40px;
+  background: radial-gradient(circle at top left, #e3f2fd, #f4f6fb);
+}
+
+.hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: #555;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn.primary {
+  background: #1e88e5;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #1565c0;
+}
+
+.btn.secondary {
+  border: 1px solid #1e88e5;
+  color: #1e88e5;
+  background: #fff;
+}
+
+.btn.secondary:hover {
+  background: #e3f2fd;
+}
+
+.hero-small {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ---------- FEATURES ---------- */
+
+.features {
+  padding: 30px 16px 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 16px 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+  text-align: center;
+  padding: 14px;
+  font-size: 0.85rem;
+  color: #666;
+  background: #eef2f7;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .navbar a {
+    font-size: 0.85rem;
+    margin-left: 8px;
+  }
+
+  .hero {
+    padding: 30px 12px 24px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-sub {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    margin: 10px 8px 24px;
+    padding: 14px 16px;
+  }
+
+  button, .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+

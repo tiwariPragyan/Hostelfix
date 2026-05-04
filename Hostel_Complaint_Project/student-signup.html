@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Sign Up – HostelFix</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <span>Hostel<span class="logo-accent">Fix</span></span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="complaint.html">New Complaint</a>
+      <a href="student.html">My Complaints</a>
+      <a href="student-login.html">Student Login</a>
+      <a href="admin.html">Admin Login</a>
+    </div>
+  </div>
+
+  <h2>Student Sign Up</h2>
+  <div class="container">
+    <form id="studentSignupForm">
+      <label>Name</label>
+      <input type="text" id="signupName" required>
+
+      <label>Email</label>
+      <input type="email" id="signupEmail" required>
+
+      <label>Password</label>
+      <input type="password" id="signupPass" required>
+
+      <button type="submit">Create Account</button>
+      <p style="margin-top:10px;font-size:0.9rem;">
+        Already have an account?
+        <a href="student-login.html">Login here</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
